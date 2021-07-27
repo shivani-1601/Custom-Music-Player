@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Music Player</title>
+  <!-- CSS File -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+
+     <!-- volume slider -->
+      <div class="slidecontainer">
+        <i class="material-icons">volume_down  </i>
+        <input type="range" min="0" max="100" value="40" class="slider">
+        <i class="material-icons"> volume_up</i>
+      </div>
+
+       <!-- Image Section -->
+         <div class="img-area">
+            <img src="" alt="">
+          </div>
+
+          <!-- Music Title and Artist -->
+          <div class="music-info">
+           <p class="name"></p>
+           <p class="artist"></p>
+          </div>
+
+          <!-- Progess Bar -->
+            <div class="progress-area">
+              <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+             </div>
+              <div class="music-timer">
+                <span class="curr-time">0:00</span>
+                <span class="total-time">0:00</span>
+              </div>
+            </div>
+
+            <!-- Control Buttons -->
+             <div class="controls">
+              <i id="more-music" class="material-icons" title="Music List">queue_music</i>
+                 <i id="prev" class="material-icons" title="Previous">fast_rewind</i>
+                  <div class="play-pause">
+                    <i class="material-icons play" title="Play/Pause">play_arrow</i>
+                  </div>
+                 <i id="next" class="material-icons" title="Next">fast_forward</i>
+                 <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+            </div>
+
+            <!-- Music List -->
+            <div class="music-list">
+              <div class="header">
+                   <div class="left-area">
+                     <i class= "list material-icons">queue_music</i>
+                     <span>All Songs</span>
+                   </div>
+                     <i id="cross" class="material-icons" title="close">close</i>
+              </div>
+              <ul>
+               <!-- here li list are coming from js -->
+              </ul>
+            </div>
+
+  </div>
+  <!-- load javascript file -->
+  <script src="js/script1.js"></script>
+</body>
+</html>
