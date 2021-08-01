@@ -26,7 +26,7 @@ body{
 }
 
 /* Using FLEX (default direction is row) to align items in horizontal direction */
-.slidecontainer, .progress-area .music-timer, .controls, .music-list .header, .music-list ul li{
+.slidecontainer, .music-timer, .controls, .music-list .header, .music-list ul li{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,7 +137,6 @@ body{
   border-radius: 50%;
   top: 50%;
   right: -.5rem;
-  z-index: 2;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-50%);
